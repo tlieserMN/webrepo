@@ -15,6 +15,7 @@ class TweetController extends Controller
         //SQL
         $tweets = DB::select("SELECT * FROM tweets");
 
+        
         return view("tweets")->with(array("tweetss" => $tweets, "title" => "Tweets"));
     }
 
